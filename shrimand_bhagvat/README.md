@@ -73,17 +73,22 @@ Project Deliverables:
 </p>
 <h1>Output</h1>
 <p float="left">
-<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p1.jpg" alt="",width=100,height=100>
+
+<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p1.jpg"  width="100" >
+
+<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p2.jpg"  width="100" >
+
+<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p3.jpg"  width="100" >
+
+<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p4.jpg"  width="100" >
+
+<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p5.jpg"  width="100" >
+
+<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p6.jpg"  width="100" >
+
   
-<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p2.jpg" alt="",width=100,height=100>
 
-<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p3.jpg" alt="",width=100,height=100>
 
-<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p4.jpg" alt="",width=100,height=100>
-
-<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p5.jpg" alt="",width=100,height=100>
-
-<img src="https://github.com/ronak3250/depacure/blob/main/shrimand_bhagvat/output/p6.jpg" alt="",width=100,height=100>
 
 </p>
 <p>
