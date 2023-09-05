@@ -201,48 +201,7 @@ class _HomePageState extends State<HomePage> {
                     return [SliverAppBar(
                       actions: [
 
-                        Consumer<ModelTheme>(builder: (context, themeNotifier,
-                            child) {
-                          return IconButton(
-                            icon: Icon(Icons.language), onPressed: () async {
-                            // setState(() {
-                            //   context.setLocale(Locale('en'));
-                            // });
-                            print(context.deviceLocale);
 
-                            themeNotifier.isLang == "english" ? themeNotifier.Lang = "english" : themeNotifier.Lang = "gujrati";
-                            // setState(() {
-                             // context.locale=Locale('gu','IN');
-
-if(newLocale== Locale('en','US')||newLocale==Locale('en','IN')){
-
-   newLocale = Locale('gu','IN');
-  print(" first newLocal $newLocale");
-  await EasyLocalization.of(context)?.setLocale(newLocale);
- // await context.setLocale(newLocale);
-}
-else{
-   newLocale = Locale('en','US');
-  print("newLocal $newLocale");
-
-   await EasyLocalization.of(context)?.setLocale(newLocale);
-}
-print(context.deviceLocale);
-
-
-                            // change `easy_localization` locale
-                           // Get.updateLocale(_newLocale);
-
-                            // });
-// setState(() {
-
-//   Locale myLocale = Localizations.localeOf(context);
-//   myLocale.countryCode==Locale('en','US')? context.locale=Locale('gu','In'): context.locale=Locale('en','US');
-//
-// });
-
-                          },);
-                        },),
 
 
                         Consumer<ModelTheme>(builder: (context, themeNotifier,
@@ -250,15 +209,58 @@ print(context.deviceLocale);
                           return InkWell(
                             child: Icon(Icons.circle_rounded),
                             onTap: () {
-                              setState(() {
+
                                 themeNotifier.isDark
                                     ? themeNotifier.isDark = false
                                     : themeNotifier.isDark = true;
-                              });
+
                             },
 
                           );
                         },),
+                        Consumer<ModelTheme>(builder: (context, value, child) {
+                          return                         PopupMenuButton<int>(
+                            itemBuilder: (context) => [
+                              PopupMenuItem(
+                                onTap: ()async{
+
+                                  value.Lang = "gujrati";
+print(value.isLang);
+                                  newLocale = Locale('en','US');
+                                  print("newLocal $newLocale");
+
+                                  await EasyLocalization.of(context)?.setLocale(newLocale);
+
+                                },
+                                value: 1,
+                                child: Text(
+                                  "English",
+                                  style:
+                                  TextStyle( fontWeight: FontWeight.w700),
+                                ),
+                              ),
+                              PopupMenuItem(
+                                onTap: ()async{
+                                  value.Lang = "english";
+                                  print(value.isLang);
+                                  newLocale = Locale('gu','IN');
+                                  print(" first newLocal $newLocale");
+                                  await EasyLocalization.of(context)?.setLocale(newLocale);
+
+                                },
+                                value: 2,
+                                child: Text(
+                                  "Gujrati",
+                                  style:
+                                  TextStyle( fontWeight: FontWeight.w700),
+                                ),
+                              ),
+                            ],
+                            elevation: 4,
+
+                          );
+
+                        },)
 
                       ],
                       automaticallyImplyLeading: false,

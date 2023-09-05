@@ -19,6 +19,7 @@ void main() async {
   await EasyLocalization.ensureInitialized();
   runApp(
       EasyLocalization(
+        saveLocale: true,
       fallbackLocale:  Locale('en', 'US'),
       child: MultiProvider(providers: [
 

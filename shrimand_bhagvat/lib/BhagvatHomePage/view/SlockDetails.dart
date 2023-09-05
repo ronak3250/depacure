@@ -35,7 +35,7 @@ class _SlockDetailsState extends State<SlockDetails> {
                     builder: (context, value, child) {
                       return InkWell(
                         onTap: (){
-                       
+
                         },
                         child: widget.details["favourite"]==false?Icon(
                           Icons.favorite,
